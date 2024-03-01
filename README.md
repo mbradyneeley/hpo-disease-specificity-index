@@ -2,6 +2,8 @@
 
 This repository contains a Python script for parsing the Human Phenotype Ontology (HPO) to build a hierarchical tree structure and calculate a disease-specificity index (DsI) for given cohorts based on their phenotype profiles.
 
+The disease specificity index is calculated similarly as done in this paper: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8398478/
+
 ## Overview
 
 The script `buildHPO_tree_and_query_cohort_disease_specificity_index.py` performs several key functions:
@@ -17,15 +19,14 @@ The script `buildHPO_tree_and_query_cohort_disease_specificity_index.py` perform
 
 ## Usage
 
-1. Ensure you have the required OBO file containing the HPO data. This script expects the OBO file to be in the same directory or a specified path.
+1. Ensure you have the required OBO file containing the HPO data. This is easily found on the human phenotype ontology website.
 
 2. Place your cohort data in a directory, ensuring that each file contains the HPO IDs relevant to that cohort.
 
 3. Adjust the `obo_file_path`, `directory_path`, and `output_file` variables in the script to point to your OBO file, cohort directory, and desired output file, respectively.
 
 4. Run the script:
-   ```
-   python buildHPO_tree_and_query_cohort_disease_specificity_index.py
+   `python buildHPO_tree_and_query_cohort_disease_specificity_index.py`
 
 
 
